@@ -192,6 +192,11 @@ public static void main(String[] args) throws
 		}
 	} // main() ends here
 } // class ends here
+
+    //maybe whats needed for a 16-byte random key encoded as a base64 string???
+    //don't really know what UTF-8 is
+    byte[] data = text.getBytes("UTF-8");
+    String base64 = Base64.encodeToString(data, Base64.DEFAULT);
 }
 
 package nsiproject1;
